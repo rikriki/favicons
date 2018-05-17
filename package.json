@@ -13,8 +13,7 @@
   "scripts": {
     "test": "ava --require @babel/register test/**/*.test.js",
     "coverage": "nyc npm test",
-    "prepublish": "gulp",
-    "preinstall": "./node_modules/.bin/gulp"
+    "prepublish": "gulp"
   },
   "keywords": [
     "favicon",
