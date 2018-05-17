@@ -14,7 +14,7 @@
     "test": "ava --require @babel/register test/**/*.test.js",
     "coverage": "nyc npm test",
     "prepublish": "gulp",
-    "preinstall": "npm run prepublish"
+    "preinstall": "./node_modules/.bin/gulp"
   },
   "keywords": [
     "favicon",
