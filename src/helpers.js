@@ -228,7 +228,7 @@ module.exports = function(options) {
 
         let promise = null;
 
-        if (svgSource) {
+        if (svgSource && svgSource !== -1) {
           log("Image:render", `Rendering SVG to ${width}x${height}`);
           promise = svg2png(svgSource.file, { height, width }).then(Jimp.read);
         } else {
